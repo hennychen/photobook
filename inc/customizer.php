@@ -115,8 +115,8 @@ function photobook_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control(	new WP_Customize_Color_Control(	$wp_customize, 'photobook_font_color', array(
-			'label' 		=> __( 'Font Color', 'photobook' ),
-			'section' 		=> 'colors',
+			'label' 		=> __( '字体颜色', 'photobook' ),
+			'section' 		=> '颜色',
 			'settings' 		=> 'photobook_font_color'
 	) ) );
 
@@ -129,8 +129,8 @@ function photobook_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control(	new WP_Customize_Color_Control(	$wp_customize, 'photobook_primary_color', array(
-			'label' 		=> __( 'Primary Color', 'photobook' ),
-			'section' 		=> 'colors',
+			'label' 		=> __( '主色彩', 'photobook' ),
+			'section' 		=> '颜色',
 			'settings' 		=> 'photobook_primary_color'
 	) ) );
 

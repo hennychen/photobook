@@ -29,7 +29,7 @@ get_header(); ?>
 						$dt_post_id = get_the_ID();
 						$dt_post_thumbnail_id = get_post_thumbnail_id( $dt_post_id );
 						$dt_thumbnail = wp_get_attachment_image( $dt_post_thumbnail_id, 'photobook-front-post-img', true );
-						echo $dt_thumbnail;
+						echo "<a href='".the_permalink()."'>".$dt_thumbnail."</a>";
 
 					else : ?>
 						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/blank.png" alt="no image found"/>
